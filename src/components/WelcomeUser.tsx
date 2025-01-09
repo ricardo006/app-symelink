@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 
 const WelcomeUser: React.FC = () => {
     const theme = useTheme();
+    const isDarkMode = theme.palette.mode === "dark";
 
     return (
         <Box
@@ -14,8 +15,7 @@ const WelcomeUser: React.FC = () => {
                 borderRadius: '20px',
                 textAlign: 'left',
                 minHeight: '180px',
-                border: theme.customStyles.welcomeBox.border,
-                boxShadow: ' rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
+                border: isDarkMode ? "1px solid #1c2d3b" : "1px solid #f2e9fa",
             }}
         >
             <Typography variant="h4">Olá User</Typography>

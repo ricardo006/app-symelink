@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 // Estilizando o Button para usar o pseudo-elemento ::first-letter
 const CapitalizedButton = styled(Button)(({ theme }) => ({
     textTransform: 'none', // Não transforma o texto em maiúsculas por padrão
+    fontFamily: 'Manrope',
     '&::first-letter': {
         textTransform: 'uppercase !important', // Apenas a primeira letra será maiúscula
     },
