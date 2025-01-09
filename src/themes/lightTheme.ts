@@ -12,8 +12,8 @@ const lightTheme = createTheme({
     },
     customStyles: {
         welcomeBox: {
-            background: '#fbfaff', // Fundo personalizado para caixas de boas-vindas
-            border: '1.2px solid #ddc4f5', // Borda suave para contraste
+            background: '#fff', // Fundo personalizado para caixas de boas-vindas
+            border: '1.2px solid #f2e9fa', // Borda suave para contraste
         },
     },
 });
